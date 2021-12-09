@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Outfit:wght@300;400;600&display=swap");
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Very-dark-blue: hsl(217, 54%, 11%);
+  --Very-dark-blue-2: hsl(216, 50%, 16%);
+  --Very-dark-blue-3: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0%;
+  padding: 0%;
+}
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+html {
+  max-height: 100%;
+}
+body {
+  color: white;
+  font-family: Outfit;
+  background: var(--Very-dark-blue);
+}
+.card {
+  background: var(--Very-dark-blue-2);
+  margin: 30px 30px;
+  padding: 30px 30px;
+  border-radius: 20px;
+}
+.card .text {
+  color: var(--Soft-blue);
+  margin: 10px 0;
+}
+.card .top-img {
+  margin-bottom: 17px;
+}
+.top-img {
+  height: 100%;
+  width: 100%;
+}
+.top-img img {
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.card h1 {
+  font-size: 25px;
+}
+.card .text {
+  margin: 20px 0;
+  line-height: 25px;
+}
+.card .medium {
+  font-size: 18px;
+}
+
+.card .medium .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card .medium .icons img {
+  margin-right: 7px;
+}
+.card .medium .icons .icons1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+.card .medium .icons .icons1 img {
+  margin-right: 10px;
+}
+.card .medium .icons .icons2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.medium .time {
+  color: var(--Soft-blue);
+}
+.medium .price {
+  color: cyan;
+}
+.card .footer .bar {
+  background: var(--Very-dark-blue-3);
+  width: 100%;
+  height: 1px;
+  margin: 17px 0;
+}
+.card .footer .bottom-footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  color: var(--Soft-blue);
+  font-size: 18px;
+}
+.card .footer img {
+  border: solid 1px white;
+  border-radius: 100%;
+  margin: 0px 20px 0 0;
+  width: 30px;
+}
+.card .footer .name {
+  color: white;
+}
