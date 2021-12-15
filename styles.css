@@ -24,18 +24,26 @@ html {
   box-sizing: inherit;
 }
 html {
-  max-height: 100%;
+  height: 100%;
 }
 body {
   color: white;
   font-family: Outfit;
   background: var(--Very-dark-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  min-height: 100%;
 }
 .card {
   background: var(--Very-dark-blue-2);
   margin: 30px 30px;
   padding: 30px 30px;
   border-radius: 20px;
+  max-width: 390px;
+  align-self: center;
+  justify-self: center;
 }
 .card .text {
   color: var(--Soft-blue);
@@ -60,6 +68,7 @@ body {
 .card .text {
   margin: 20px 0;
   line-height: 25px;
+  font-size: 20px;
 }
 .card .medium {
   font-size: 18px;
