@@ -53,17 +53,33 @@ body {
   margin-bottom: 17px;
 }
 .top-img {
-  height: 100%;
   width: 100%;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
 }
 .top-img img {
   background-size: 100%;
   height: 100%;
   width: 100%;
-  border-radius: 10px;
+  cursor: pointer;
+}
+.top-img:hover::before {
+  content: url(./images/icon-view.svg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 255, 247, 0.5);
+  display: grid;
+  place-content: center;
 }
 .card h1 {
   font-size: 25px;
+  cursor: pointer;
+}
+.card h1:hover {
+  color: var(--Cyan);
 }
 .card .text {
   margin: 20px 0;
@@ -130,4 +146,8 @@ body {
 }
 .card .footer .name {
   color: white;
+  cursor: pointer;
+}
+.card .footer .name:hover {
+  color: var(--Cyan);
 }
